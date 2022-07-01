@@ -1,0 +1,20 @@
+.navbar_component {
+    background-color: #22303E;
+}
+
+.navbar {
+    width: inherit;
+    height: 40px;
+    background-color: #22303E;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.navbar_text {
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}

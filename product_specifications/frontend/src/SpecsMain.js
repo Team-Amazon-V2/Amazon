@@ -6,7 +6,7 @@ function SpecsMain() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-  fetch('http://localhost:3008/specs/B09V3HN1KC')
+  fetch('http://localhost:3508/specs/B09V3HN1KC')
   .then ((res) => res.json())
   .then ((data) => { 
     setSpecsData(data)

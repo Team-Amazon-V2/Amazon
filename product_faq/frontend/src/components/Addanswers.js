@@ -8,7 +8,7 @@ function Addanswer (props) {
             "answer_text": answerTextInput
         }
 
-        fetch(`http://localhost:3009/answer/${e.target.id}`, {
+        fetch(`http://localhost:3509/answer/${e.target.id}`, {
                 method: 'PATCH',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newObj)

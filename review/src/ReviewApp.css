@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  
+  text-align: left;
+  border-bottom: 1px;
+  color:rgb(21, 6, 159);
+  
+  display: flex;
+  
+ 
+}
+
+.userinput{
+  position: absolute;
+  left:0;
+  top:150px;
+ 
+
+}
+
+.singledata {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(104, 19, 143);
+  width:1000px;
+  text-align: left;
+  margin-top: 10px;
+  border-bottom: 4px dotted red;
+ 
+  margin-left: 50px;
+  flex-wrap: wrap;
+
+
+}
+.singleuser {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(94, 9, 127);
+  width: 600px;
+  margin: auto;
+  border: 5px solid rgb(180, 102, 178);
+  padding: 1rem;
+  margin-top: 3rem;
+  margin-left: 50px;
+}
+
+.userItem:hover{
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+.deletebtn {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1rem;
+  background:red;
+  color: white;
+  cursor:pointer;
+  opacity: .8;
+  text-align: center;
+  border: none;
+  margin-right:10px;
+  font-weight: bold;
+}
+
+.updatebtn {
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1rem;
+  background:rgb(21, 194, 27);
+  color: white ;
+  cursor:pointer;
+  opacity: .8;
+  text-align: center;
+  border: none;
+  margin-right:10px;
+  font-weight: bold;
+}
+
+
+
+.btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1rem;
+  background:blue;
+  color: white;
+  cursor:pointer;
+  opacity: .8;
+  text-align: center;
+  border: none;
+  margin-right:10px;
+  font-weight: bold;
+}
+
+
+.fa-star {
+  color: rgba(112, 111, 111, 0.856);
+}
+
+.fa-star:hover {
+  color: #e2334c;
+}
+
+.fa-star.selected {
+  color: orange;
+}
+
+.verified{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:10px;
+  color:red;
+}

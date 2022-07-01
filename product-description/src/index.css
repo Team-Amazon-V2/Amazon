@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+      "Droid Sans", "Helvetica Neue", sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+* {
+   font-family: "Lato", sans-serif;
+}
+
+.product-descDC {
+   width: auto;
+   min-width: 167px;
+   max-width: 380px;
+   margin-left: 50%;
+   margin-right: 300px;
+   height: auto;
+}
+
+#nameDC {
+   font-weight: 400;
+   font-size: 28px;
+}
+
+#paymentsDC {
+   padding-bottom: 20px;
+}
+
+#reviewsDC {
+   text-decoration: none;
+   color: steelblue;
+   margin-left: 10px;
+}
+
+.optionsDC {
+   display: grid;
+}
+a {
+   text-decoration: none;
+   color: steelblue;
+}
+
+#payDC {
+   font-weight: bold;
+   color: steelblue;
+   text-decoration: none;
+   letter-spacing: 0.5px;
+}
+
+#mopayDC {
+   font-weight: bold;
+   color: rgb(194, 2, 2);
+   text-decoration: none;
+   letter-spacing: 0.5px;
+}
+
+.optionsBtnDC {
+   width: min-content;
+   font-size: 15px;
+   padding: 5px 10px;
+   margin: 5px;
+   background: none;
+   border: solid lightslategray 1px;
+}
+
+.optionsBtnDC:active {
+   border: solid orange 1px;
+   font-weight: bold;
+   background-color: rgb(250, 246, 237);
+   box-shadow: orange 0px 0px 4px;
+}
+
+#priceDC {
+   font-size: 28px;
+}
+
+#aboutDC {
+   font-weight: bold;
+}

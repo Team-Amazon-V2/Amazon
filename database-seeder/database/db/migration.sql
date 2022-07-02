@@ -19,7 +19,8 @@ CREATE TABLE product(
 );
 
 CREATE TABLE qanda(
-    question_id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
+    question_id VARCHAR,
     question_title TEXT,
     question_date VARCHAR,
     answer_text TEXT,
@@ -46,12 +47,6 @@ CREATE TABLE product_specs (
     date_available VARCHAR,
     box_info text[],
     asin_id VARCHAR
-);
-
-CREATE TABLE product_categories(
-    category_id SERIAL PRIMARY KEY,
-    category TEXT,
-    asin_id INTEGER[]
 );
 
 CREATE TABLE related_products(

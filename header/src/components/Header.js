@@ -76,7 +76,6 @@ function Header(props) {
         </div>
         <Navbar />
       </div>
-      <h2>{itemData.length > 0 ? itemData[0].name : "Search for an item"}</h2>
     </>
   );
 }

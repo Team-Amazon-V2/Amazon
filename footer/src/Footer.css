@@ -1,6 +1,6 @@
 .container {
     background-color: #101522;
-    height: 350px;
+    height: fit-content;
 }
 
 .footer_wrap {

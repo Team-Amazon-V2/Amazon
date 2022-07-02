@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS product;
 DROP TABLE IF EXISTS qanda;
 DROP TABLE IF EXISTS review;
 DROP TABLE IF EXISTS product_specs;
+DROP TABLE IF EXISTS related_products;
 
 CREATE TABLE product(
     product_id SERIAL PRIMARY KEY,
@@ -52,4 +53,14 @@ CREATE TABLE product_categories(
     category TEXT,
     asin_id INTEGER[]
 );
-    
+
+CREATE TABLE related_products(
+    id SERIAL UNIQUE PRIMARY KEY,
+    asin_id VARCHAR,
+    picture TEXT,
+    product_name TEXT,
+    rating NUMERIC,
+    reviews INTEGER,
+    category TEXT,
+    price NUMERIC
+);

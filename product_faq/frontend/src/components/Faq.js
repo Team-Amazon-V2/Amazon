@@ -8,7 +8,7 @@ Modal.setAppElement('#faq-root')
 function Faq(props){
     
 const handlePostAnswer = (e) => {
-  fetch(`http://localhost:3009/question/${e.target.id}`)
+  fetch(`http://localhost:3509/question/${e.target.id}`)
   .then ((res) => res.json())
   .then ((data) => {
     props.setquestionData(data)
@@ -26,7 +26,7 @@ const handleModalSubmit = (e) => {
     "question_user": userName
   };
 
-  fetch(`http://localhost:3009/question/post`, {
+  fetch(`http://localhost:3509/question/post`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newObj)
@@ -37,7 +37,7 @@ const handleModalSubmit = (e) => {
 }
 
   useEffect(() => {
-    fetch('http://localhost:3009/faq/B09V3HN1KC')
+    fetch('http://localhost:3509/faq/B09V3HN1KC')
     .then ((res)=> res.json())
     .then ((data) => {
       props.setFaqData(data)

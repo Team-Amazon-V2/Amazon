@@ -12,11 +12,10 @@ const pool = new Pool({
     // ssl: {
     //   rejectUnauthorized: false
     // }
-    user: process.env.DB_USER,
-    host: process.env.DB_HOST,
-    database: process.env.DATABASE,
-    password: process.env.DB_PASSWORD,
-    port: process.env.DB_PORT,
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+       rejectUnauthorized: false,
+    }
   });
 
 //get specs by ASIN

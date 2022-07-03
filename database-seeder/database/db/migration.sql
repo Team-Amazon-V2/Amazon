@@ -1,11 +1,11 @@
 DROP TABLE IF EXISTS product;
 DROP TABLE IF EXISTS qanda;
-DROP TABLE IF EXISTS review;
 DROP TABLE IF EXISTS product_specs;
 DROP TABLE IF EXISTS related_products;
 DROP TABLE IF EXISTS overviewinfo;
 DROP TABLE IF EXISTS reviewinfo;
 DROP TABLE IF EXISTS photo_gallery;
+DROP TABLE IF EXISTS cart;
 
 CREATE TABLE product(
     product_id SERIAL PRIMARY KEY,

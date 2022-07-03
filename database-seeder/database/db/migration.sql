@@ -3,6 +3,9 @@ DROP TABLE IF EXISTS qanda;
 DROP TABLE IF EXISTS review;
 DROP TABLE IF EXISTS product_specs;
 DROP TABLE IF EXISTS related_products;
+DROP TABLE IF EXISTS overviewinfo;
+DROP TABLE IF EXISTS reviewinfo;
+DROP TABLE IF EXISTS photo_gallery;
 
 CREATE TABLE product(
     product_id SERIAL PRIMARY KEY,
@@ -28,12 +31,16 @@ CREATE TABLE qanda(
     asin_id VARCHAR 
 );
 
-CREATE TABLE review(
-    review_id SERIAL PRIMARY KEY,
-    rating NUMERIC,
-    review_title TEXT,
-    review_body TEXT,
-    asin_id VARCHAR
+CREATE TABLE reviewinfo(
+    id SERIAL PRIMARY KEY NOT NULL,
+    name VARCHAR(50),
+    review VARCHAR(500)
+);
+
+CREATE TABLE overviewinfo(
+    id SERIAL PRIMARY KEY NOT NULL,
+    productname VARCHAR(50),
+    productoverview VARCHAR
 );
 
 CREATE TABLE product_specs (
@@ -58,4 +65,16 @@ CREATE TABLE related_products(
     reviews INTEGER,
     category TEXT,
     price NUMERIC
+);
+
+CREATE TABLE cart(
+   id integer,
+   item TEXT NOT NULL,
+   price integer
+);
+
+CREATE TABLE photo_gallery(
+    id SERIAL PRIMARY KEY,
+    image TEXT[],
+    asin_id VARCHAR
 );

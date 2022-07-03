@@ -16,6 +16,16 @@ app.get("/", async (req, res) => {
    }
 });
 
+app.get("/:id", async (req, res) => {
+   const id = req.params.id;
+   try {
+      const product = await pool.query("SELECT * FROM product WHERE asin_id = $1", [id]);
+      res.json(product.rows[0]);
+   } catch (err) {
+      res.send(err.message);
+   }
+});
+
 const PORT = process.env.PORT;
 
 app.listen(PORT, () => {

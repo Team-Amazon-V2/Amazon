@@ -1,13 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import CartApp from './CartApp';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import CartApp from "./CartApp";
 
-const root = ReactDOM.createRoot(document.getElementById('cart'));
+const root = ReactDOM.createRoot(document.getElementById("cart"));
 root.render(
-  <React.StrictMode>
-    <CartApp />
-  </React.StrictMode>
+   <React.StrictMode>
+      <CartApp />
+   </React.StrictMode>
 );
-

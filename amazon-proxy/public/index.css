@@ -1,0 +1,10 @@
+#flex {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+#photo-gallery {
+    width:482px;
+    height: 540px;
+}

@@ -18,12 +18,15 @@
     "client7": "npm start --prefix product_faq/frontend",
     "server8": "npm start --prefix product_specifications/backend",
     "client8": "npm start --prefix product_specifications/frontend",
-    "server9": "npm start2 --prefix product-description/database",
-    "client9": "npm start --prefix product_description",
+    "server9": "npm start --prefix product-description/database",
+    "client9": "npm start --prefix product-description",
     "server10": "npm start2 --prefix review",
     "client10": "npm start --prefix review",
+    "server11": "npm start2 --prefix shopping-cart/db",
+    "client11": "npm start --prefix shopping-cart",
+
     
-    "startall": "concurrently \"npm run client1\" \"npm run client2\" \"npm run client3\" \"npm run client4\" \"npm run server4\" \"npm run client5\" \"npm run server5\" \"npm run client6\" \"npm run server6\" \"npm run server7\" \"npm run client7\" \"npm run client8\" \"npm run server8\" \"npm run client9\" \"npm run server9\" \"npm run server10\"\"npm run client10\""
+    "startall": "concurrently \"npm run client1\" \"npm run client2\" \"npm run client3\" \"npm run client4\" \"npm run server4\" \"npm run client5\" \"npm run server5\" \"npm run client6\" \"npm run server6\" \"npm run server7\" \"npm run client7\" \"npm run client8\" \"npm run server8\" \"npm run client9\" \"npm run server9\" \"npm run server10\"\"npm run client10\" \"npm run server11\"\"npm run client11\""
   },
   "repository": {
     "type": "git",

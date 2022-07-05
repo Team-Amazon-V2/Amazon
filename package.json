@@ -1,0 +1,42 @@
+{
+  "name": "amazon-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client1": "npm start --prefix amazon-proxy",
+    "client2": "npm start --prefix footer",
+    "client3": "npm start --prefix header",
+    "client4": "npm start --prefix overviewv2",
+    "server4": "npm start --prefix overviewv2/database",
+    "client5": "npm start --prefix people-also-bought",
+    "server5": "npm start --prefix people-also-bought/database",
+    "client6": "npm start --prefix photo-gallery",
+    "server6": "npm start --prefix photo-gallery/db",
+    "server7": "npm start --prefix product_faq/backend",
+    "client7": "npm start --prefix product_faq/frontend",
+    "server8": "npm start --prefix product_specifications/backend",
+    "client8": "npm start --prefix product_specifications/frontend",
+    "server9": "npm start2 --prefix product-description/database",
+    "client9": "npm start --prefix product_description",
+    "server10": "npm start2 --prefix review",
+    "client10": "npm start --prefix review",
+    
+    "startall": "concurrently \"npm run client1\" \"npm run client2\" \"npm run client3\" \"npm run client4\" \"npm run server4\" \"npm run client5\" \"npm run server5\" \"npm run client6\" \"npm run server6\" \"npm run server7\" \"npm run client7\" \"npm run client8\" \"npm run server8\" \"npm run client9\" \"npm run server9\" \"npm run server10\"\"npm run client10\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Amazon-V2/Amazon-Proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Amazon-V2/Amazon-Proxy/issues"
+  },
+  "homepage": "https://github.com/Team-Amazon-V2/Amazon-Proxy#readme",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

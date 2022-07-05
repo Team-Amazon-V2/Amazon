@@ -1,0 +1,9 @@
+.productOverview {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+}
+
+.OVpictures {
+   max-width: 1400px;
+}

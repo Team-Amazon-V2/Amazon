@@ -63,8 +63,8 @@ const handleModalSubmit = (e) => {
    style={{
     overlay: {
       position: 'absolute',
-      top: '30%',
-      left: '25%',
+      top: '7000px',
+      left: '200px',
       right: 0,
       bottom: 0,
       backgroundColor: 'rgba(255,255,255,255)'

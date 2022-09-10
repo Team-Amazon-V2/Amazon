@@ -22,7 +22,7 @@
     "client9": "npm start --prefix product-description",
     "server10": "npm start2 --prefix review",
     "client10": "npm start --prefix review",
-    "server11": "npm start2 --prefix shopping-cart/db",
+    "server11": "npm start --prefix shopping-cart/db",
     "client11": "npm start --prefix shopping-cart",
 
     
